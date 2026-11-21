@@ -1,0 +1,522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Jugal Pokar — Exploring finance, investment research, analytics and technology.">
+  <meta name="theme-color" content="#10251F">
+
+  <title>Jugal Pokar | Finance, Analytics & Technology</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAVIGATION -->
+  <header class="navbar">
+    <a href="#home" class="logo" aria-label="Jugal Pokar, home">
+      JUGAL POKAR<span>.</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#lab">Finance Lab</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scroll-progress-bar"></span>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          FINANCE <span>·</span> ANALYTICS <span>·</span> TECHNOLOGY
+        </p>
+
+        <h1>
+          Understanding numbers.
+          <em>Exploring businesses.</em>
+          Building ideas.
+        </h1>
+
+        <p class="hero-description">
+          I'm Jugal, a finance enthusiast with a background
+          in Chartered Accountancy, exploring the intersection
+          of financial analysis, investment research and technology.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#work" class="button-primary">
+            Explore selected work <span aria-hidden="true">↗</span>
+          </a>
+
+          <a href="#contact" class="button-secondary">
+            Get in touch <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <p class="location">
+          BASED IN INDIA <span>·</span> RESEARCH, MODELS AND EXPERIMENTS IN PROGRESS
+        </p>
+
+      </div>
+
+      <!-- INTERACTIVE CHART -->
+      <div class="hero-visual">
+
+        <div class="chart-heading">
+          <span>FIG. 01 / MARKET STRUCTURE</span>
+          <span class="chart-indicator">
+            <span></span> INTERACTIVE STUDY
+          </span>
+        </div>
+
+        <div class="chart-container">
+
+          <svg
+            class="hero-chart"
+            viewBox="0 0 560 340"
+            role="group"
+            aria-labelledby="chart-title chart-description"
+          >
+
+            <title id="chart-title">Illustrative market structure chart</title>
+
+            <desc id="chart-description">
+              An interactive illustrative chart. Focus or select its
+              highlighted points to explore different positions.
+              This is not live market data.
+            </desc>
+
+            <defs>
+              <linearGradient id="chart-area" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#C5A46D" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#C5A46D" stop-opacity="0"/>
+              </linearGradient>
+
+              <filter id="chart-glow">
+                <feGaussianBlur stdDeviation="5" result="blur"/>
+                <feMerge>
+                  <feMergeNode in="blur"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- GRID -->
+            <g class="chart-grid">
+              <line x1="35" y1="55" x2="535" y2="55"/>
+              <line x1="35" y1="115" x2="535" y2="115"/>
+              <line x1="35" y1="175" x2="535" y2="175"/>
+              <line x1="35" y1="235" x2="535" y2="235"/>
+              <line x1="35" y1="295" x2="535" y2="295"/>
+            </g>
+
+            <!-- AREA -->
+            <path
+              class="chart-area"
+              d="M35 250
+                 C75 230 85 200 125 215
+                 S190 260 225 185
+                 S280 130 320 155
+                 S380 195 410 115
+                 S475 65 525 80
+                 L525 295 L35 295 Z"
+            />
+
+            <!-- MAIN LINE -->
+            <path
+              class="chart-line"
+              d="M35 250
+                 C75 230 85 200 125 215
+                 S190 260 225 185
+                 S280 130 320 155
+                 S380 195 410 115
+                 S475 65 525 80"
+            />
+
+            <!-- VERTICAL GUIDE -->
+            <line
+              id="chart-guide"
+              class="chart-guide"
+              x1="125"
+              y1="35"
+              x2="125"
+              y2="295"
+            />
+
+            <!-- POINTS -->
+            <g class="chart-points">
+
+              <circle
+                class="chart-point"
+                cx="125"
+                cy="215"
+                r="5"
+                tabindex="0"
+                role="button"
+                aria-label="Illustrative point one"
+                data-label="Market observation 01"
+                data-value="Initial movement"
+              />
+
+              <circle
+                class="chart-point"
+                cx="225"
+                cy="185"
+                r="5"
+                tabindex="0"
+                role="button"
+                aria-label="Illustrative point two"
+                data-label="Market observation 02"
+                data-value="Momentum shift"
+              />
+
+              <circle
+                class="chart-point"
+                cx="320"
+                cy="155"
+                r="5"
+                tabindex="0"
+                role="button"
+                aria-label="Illustrative point three"
+                data-label="Market observation 03"
+                data-value="Trend development"
+              />
+
+              <circle
+                class="chart-point"
+                cx="410"
+                cy="115"
+                r="5"
+                tabindex="0"
+                role="button"
+                aria-label="Illustrative point four"
+                data-label="Market observation 04"
+                data-value="Price expansion"
+              />
+
+            </g>
+
+          </svg>
+
+          <div
+            id="chart-tooltip"
+            class="chart-tooltip"
+            role="status"
+            aria-live="polite"
+          >
+            <span id="tooltip-label">Market observation 01</span>
+            <strong id="tooltip-value">Initial movement</strong>
+          </div>
+
+        </div>
+
+        <div class="chart-footer">
+          <span>ILLUSTRATIVE VISUALISATION</span>
+          <span>NOT LIVE MARKET DATA</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SELECTED WORK -->
+    <section id="work" class="section work-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">01 / SELECTED WORK</p>
+
+          <h2>
+            Curiosity,
+            <em>made tangible.</em>
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Research, models and experiments in progress.
+          An exploration of markets, businesses and the
+          ideas that connect them.
+        </p>
+      </div>
+
+      <div class="project-grid">
+
+        <article class="project-card reveal">
+
+          <div class="project-visual visual-quant">
+            <span class="visual-label">01 / QUANTITATIVE FINANCE</span>
+            <span class="visual-symbol">∿</span>
+            <span class="visual-caption">PAIR ANALYSIS · STATISTICAL MODELS</span>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-meta">
+              <span>QUANTITATIVE FINANCE</span>
+              <span class="project-status status-progress">IN PROGRESS</span>
+            </div>
+
+            <h3>Nifty × Bank Nifty</h3>
+
+            <p>
+              Exploring statistical arbitrage through pair selection,
+              spread behaviour, cointegration and systematic backtesting.
+            </p>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+
+          </div>
+        </article>
+
+
+        <article class="project-card reveal">
+
+          <div class="project-visual visual-equity">
+            <span class="visual-label">02 / INVESTMENT RESEARCH</span>
+            <span class="visual-symbol">₹</span>
+            <span class="visual-caption">VALUATION · FINANCIAL MODELLING</span>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-meta">
+              <span>INVESTMENT RESEARCH</span>
+              <span class="project-status">PLANNED</span>
+            </div>
+
+            <h3>Equity Research & Valuation</h3>
+
+            <p>
+              Analysing a listed business through financial statements,
+              valuation models, industry dynamics and investment theses.
+            </p>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+
+          </div>
+        </article>
+
+
+        <article class="project-card reveal">
+
+          <div class="project-visual visual-industry">
+            <span class="visual-label">03 / INDUSTRY RESEARCH</span>
+            <span class="visual-symbol">◈</span>
+            <span class="visual-caption">SEMICONDUCTORS · INDUSTRY ECONOMICS</span>
+          </div>
+
+          <div class="project-info">
+
+            <div class="project-meta">
+              <span>INDUSTRY RESEARCH</span>
+              <span class="project-status">PLANNED</span>
+            </div>
+
+            <h3>India's Semiconductor Story</h3>
+
+            <p>
+              Understanding the semiconductor value chain,
+              industry economics, investment landscape and
+              India's emerging position.
+            </p>
+
+            <span class="project-arrow" aria-hidden="true">↗</span>
+
+          </div>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINANCE & ANALYTICS LAB -->
+    <section id="lab" class="section lab-section">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">02 / FINANCE & ANALYTICS LAB</p>
+
+          <h2>
+            Analysis,
+            <em>in motion.</em>
+          </h2>
+        </div>
+
+        <p class="section-description">
+          Interactive tools and analytical experiments
+          designed to explore financial concepts through
+          data, models and visualisation.
+        </p>
+
+      </div>
+
+
+      <div class="lab-grid">
+
+        <article class="lab-card reveal">
+          <span class="lab-number">01</span>
+          <span class="lab-icon">↗</span>
+
+          <h3>DCF Valuation Simulator</h3>
+
+          <p>
+            Explore how revenue growth, margins, discount rates
+            and terminal assumptions influence business valuation.
+          </p>
+
+          <span class="lab-status">CONCEPT IN DEVELOPMENT</span>
+        </article>
+
+
+        <article class="lab-card reveal">
+          <span class="lab-number">02</span>
+          <span class="lab-icon">▥</span>
+
+          <h3>Company Financial Dashboard</h3>
+
+          <p>
+            Explore financial performance through profitability,
+            growth, working capital and cash flow metrics.
+          </p>
+
+          <span class="lab-status">CONCEPT IN DEVELOPMENT</span>
+        </article>
+
+
+        <article class="lab-card reveal">
+          <span class="lab-number">03</span>
+          <span class="lab-icon">⌁</span>
+
+          <h3>Strategy Explorer</h3>
+
+          <p>
+            Examine systematic strategies through backtesting,
+            performance metrics, risk analysis and visualisation.
+          </p>
+
+          <span class="lab-status">CONCEPT IN DEVELOPMENT</span>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section about-section">
+
+      <div class="about-content">
+
+        <p class="eyebrow">03 / A LITTLE ABOUT ME</p>
+
+        <h2>
+          A finance-first mindset.
+          <em>A builder's curiosity.</em>
+        </h2>
+
+        <p class="about-description">
+          My foundation is in Chartered Accountancy, but my
+          curiosity extends beyond accounting and financial
+          statements.
+        </p>
+
+        <p class="about-description">
+          I'm interested in understanding how businesses work,
+          how markets behave and how technology can make
+          financial analysis more insightful.
+        </p>
+
+        <p class="about-description">
+          This portfolio is a record of that exploration —
+          including the questions, experiments, assumptions
+          and limitations along the way.
+        </p>
+
+      </div>
+
+      <div class="about-aside">
+        <span class="about-aside-label">BEYOND FINANCE</span>
+
+        <h3>VINYL.</h3>
+
+        <p>
+          A personal software experiment exploring desktop
+          interfaces, music and product design.
+        </p>
+
+        <span class="about-aside-tag">TECHNOLOGY · PRODUCT THINKING</span>
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+
+      <p class="eyebrow">04 / GET IN TOUCH</p>
+
+      <h2>
+        Good ideas begin
+        <em>with conversations.</em>
+      </h2>
+
+      <p>
+        Open to thoughtful conversations, collaborations
+        and interesting problems.
+      </p>
+
+      <div class="contact-links">
+
+        <a
+          href="https://github.com/axxxeon/axxxeon.github.io"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Repository <span aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <span>© 2026 JUGAL POKAR.</span>
+
+    <a href="#home" class="back-to-top">
+      BACK TO TOP ↑
+    </a>
+
+    <span>BUILT WITH CURIOSITY.</span>
+
+  </footer>
+
+</body>
+</html>
